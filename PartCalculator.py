@@ -15,3 +15,5 @@ print("Total Polymer needed: " + str(totalPolymer))
 print("Total Pure Quartz needed: " + str(totalPureQuartz))
 print('Total Pal Oil Cost: ' + str(totalPalOilCost))
 
+# To run this script, make sure you have Python installed on your system.
+# Save this code in a file named PartCalculator.py and run it using the command: python
