@@ -3,27 +3,30 @@
 
 
 # Enter the number of circuit boards to be produced
-circuitBoardsNeeded = 500
-currentPolymerCount = 725
-currentPureQuartzCount = 769
+circuitBoardsNeeded = 250
+currentPolymerCount = 500
+currentPureQuartzCount = 9
 # Materials required per circuit board
 polymerPerBoard = 2
 pureQuartzPerBoard = 4
 pureQuartzPerRun = 240
-
-# Calculate total materials needed
-totalPolymer = circuitBoardsNeeded * polymerPerBoard - currentPolymerCount 
-totalPureQuartz = circuitBoardsNeeded * pureQuartzPerBoard - currentPureQuartzCount 
-
-
-runsNeeded = totalPureQuartz / pureQuartzPerRun  # Ceiling division to get full runs   
-
-# Pal Oil cost per unit of Polymer
 polymerPalOilCostPer = 2 
 
-# Calculate total Pal Oil cost for Polymer needed 
-totalPalOilCost = polymerPalOilCostPer * totalPolymer
+# Calculate total materials needed
+totalPolymer = circuitBoardsNeeded * polymerPerBoard - currentPolymerCount if circuitBoardsNeeded * polymerPerBoard > currentPolymerCount else 0
+totalPureQuartz = circuitBoardsNeeded * pureQuartzPerBoard - currentPureQuartzCount if circuitBoardsNeeded * pureQuartzPerBoard > currentPureQuartzCount else 0
+totalPalOilCost = polymerPalOilCostPer * totalPolymer if totalPolymer > 0 else 0
 
+
+runsNeeded = totalPureQuartz / pureQuartzPerRun
+
+# Pal Oil cost per unit of Polymer
+# Calculate total Pal Oil cost for Polymer needed 
+
+# 30 35 35 Handiwork High Quality Cloth
+# 30 + 35 + 35 = 100
+
+# Kindling 150 Plasteel
 
 # Output the results
 print('---')
