@@ -76,4 +76,4 @@ for material, quantity in carbonFiberCost.items():
 print ('---')
 for material, quantity in cementCost.items():
     totalCost[material] = quantity * legendarySphereLF * legendarySphereCost["Cement"]
-    print(f'Total {material} needed for Cement: {totalCost[material]}')
+    print(f'Total {material} needed for Cement: {totalCost[material] // 10}')
