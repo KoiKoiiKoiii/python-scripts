@@ -18,8 +18,6 @@ This folder contains Python code and related resources for the project. It follo
 - Python 3.8+ (or the version specified in pyproject.toml)
 - pip
 
-#
-
 ## Quick start (recommended)
 
 1. Install dependencies
