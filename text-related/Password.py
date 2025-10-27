@@ -1,4 +1,3 @@
-from BasicFunctions.StringFunctions import length
 import json
 import random
 
@@ -11,7 +10,6 @@ desiredLength = 11
 # Generate a random password
 for i in range(desiredLength):
     passwordGenerated += alphabet[random.randint(0, len(alphabet)-1)]
-print(passwordGenerated)
 
 # Save the generated password to a JSON file
 with open('passwords.json', 'w') as file:
