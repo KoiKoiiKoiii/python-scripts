@@ -4,6 +4,8 @@ import pyautogui
 from pynput import keyboard
 from pynput.keyboard import Controller, Key
 
+# As of right now, this only selects Baptiste when the key 'k' is pressed.
+# Caps lock key will stop the script entirely.
 
 keyboard_controller = Controller()
 
