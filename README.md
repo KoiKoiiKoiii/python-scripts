@@ -18,28 +18,9 @@ This folder contains Python code and related resources for the project. It follo
 - Python 3.8+ (or the version specified in pyproject.toml)
 - pip
 
-## Quick start (recommended)
-
-1. Install dependencies
-   pip install -r requirements.txt
-
-2. Run the project (example)
-   python -m src.app
-   Replace `src.app` with the appropriate module or entrypoint.
-
 ## Contributing
 
 - Open a branch per feature/fix.
 - Keep changes focused and well-documented.
 - Add tests for new behavior.
 - Run formatting before submitting a PR.
-
-## License
-
-Specify the project license (e.g., MIT) in a LICENSE file.
-
-## Contact
-
-List maintainer or team contact information in repository metadata or project documentation.
-
-Customize this README to reflect concrete package names, entrypoints, and exact tooling used in this folder.
